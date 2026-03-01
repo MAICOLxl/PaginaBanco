@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Estilo Banco</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        .barraArriba {
+            background-color: #004d33; 
+            color: white;
+            padding: 8px 5%;
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+
+        .barraArriba a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+
+        .barraArriba a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+        /* menu*/
+        .menuPrincipal {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #004d33;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            color: #8bc53f;
+            margin-left: 5px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #004d33;
+        }
+
+        .btn-login {
+            background-color: #8bc53f;
+            color: #004d33;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn-login:hover {
+            background-color: #7ab332;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* Ocultar menú en móviles por simplicidad */
+            }
+            
+            .menuPrincipal {
+                padding: 15px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="barraArriba">
+        <a href="#">Personas</a>
+        <a href="#">Empresas</a>
+        <a href="#">Institucional</a>
+    </div>
+
+    <nav class="menuPrincipal">
+        <a href="#" class="logo">Banco<span>BHD</span></a>
+        
+        <ul class="nav-links">
+            <li><a href="#">Cuentas</a></li>
+            <li><a href="#">Tarjetas</a></li>
+            <li><a href="#">Préstamos</a></li>
+            <li><a href="#">Inversiones</a></li>
+            <li><a href="#" class="btn-login">Banca en Línea</a></li>
+        </ul>
+    </nav>
+
+    <div style="padding: 50px 5%; text-align: center; color: #666;">
+        <h1>Hola</h1>
+        <p>Esto es un banco. Nada ilegal.</p>
+    </div>
+
+</body>
+</html>
